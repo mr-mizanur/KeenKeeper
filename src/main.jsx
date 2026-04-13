@@ -1,30 +1,30 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { createBrowserRouter } from "react-router";
-import { RouterProvider } from "react-router/dom";
-import MainLaout from "./layout/MainLaout";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import "./index.css";
+import MainLayout from "./layout/MainLaout";
 import Homepage from "./pages/homepage/Homepage";
 import Timeline from "./pages/timeline/Timeline";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element:<MainLaout></MainLaout>,
-    children:[
+    element: <MainLayout />,
+    children: [
       {
-        index:true,
-        element:<Homepage></Homepage>
+        index: true,
+        element: <Homepage />,
       },
       {
-        path:"/Timeline",
-        element: <Timeline></Timeline>
-      }
-    ]
+        path: "timeline",
+        element: <Timeline />,
+      },
+    ],
   },
 ]);
 
-const root = document.getElementById("root");
-
-ReactDOM.createRoot(root).render(
-  <RouterProvider router={router} />,
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <React.StrictMode>
+    <RouterProvider router={router} />
+  </React.StrictMode>
 );
