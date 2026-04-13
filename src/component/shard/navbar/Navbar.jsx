@@ -2,6 +2,7 @@ import React from 'react';
 import { CiHome } from 'react-icons/ci';
 import { IoMdClock } from 'react-icons/io';
 import { IoStatsChart } from 'react-icons/io5';
+import { Link } from 'react-router';
 
 const Navbar = () => {
     return (
@@ -19,19 +20,19 @@ const Navbar = () => {
   <div className="flex-none">
     <ul className="menu menu-horizontal gap-3 font-bold">
       <li>
-        <a  className="text-gray-600 rounded-lg px-4 py-2">
+        < Link to={"/"}  className="text-gray-600 rounded-lg px-4 py-2">
           <CiHome></CiHome> Home
-        </a>
+        </ Link>
       </li>
       <li>
-        <a className="text-gray-600 hover:text-emerald-800">
+        <Link Link to={"/timeline"} className="text-gray-600 hover:text-emerald-800">
           <IoMdClock></IoMdClock> Timeline
-        </a>
+        </Link>
       </li>
       <li>
-        <a className="text-gray-600 hover:text-emerald-800">
+        <Link Link to="/status" className="text-gray-600 hover:text-emerald-800">
           <IoStatsChart></IoStatsChart> Stats
-        </a>
+        </Link>
       </li>
     </ul>
   </div>

@@ -5,6 +5,9 @@ import "./index.css";
 import MainLayout from "./layout/MainLaout";
 import Homepage from "./pages/homepage/Homepage";
 import Timeline from "./pages/timeline/Timeline";
+import Status from "./pages/status/Status";
+import { HiH2 } from "react-icons/hi2";
+import Error from "./component/error/Error";
 
 const router = createBrowserRouter([
   {
@@ -19,7 +22,12 @@ const router = createBrowserRouter([
         path: "timeline",
         element: <Timeline />,
       },
+      {
+        path: "status",
+        element: <Status></Status>
+      },
     ],
+    errorElement: <Error></Error>
   },
 ]);
 
