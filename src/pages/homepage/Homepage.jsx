@@ -1,10 +1,13 @@
 import React from 'react';
-import HomeHader from './HomeHader';
+import HomeHeader from './HomeHader';
+import HomeCard from './HomeCard';
 
 const Homepage = () => {
     return (
-      <HomeHader></HomeHader>
-      
+        <div className="bg-gray-50 min-h-screen">
+            <HomeHeader />
+            <HomeCard />
+        </div>
     );
 };
 

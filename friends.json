@@ -1,0 +1,100 @@
+{
+  "friends": [
+    {
+      "id": 1,
+      "name": "Priya Sharma",
+      "picture": "https://picsum.photos/id/64/300/300",
+      "email": "priya.sharma@email.com",
+      "days_since_contact": 18,
+      "status": "overdue",
+      "tags": ["college", "close friend"],
+      "bio": "Met during engineering at BUET. We used to explore Dhaka street food together every weekend.",
+      "goal": 14,
+      "next_due_date": "2025-04-05"
+    },
+    {
+      "id": 2,
+      "name": "Rahim Khan",
+      "picture": "https://picsum.photos/id/91/300/300",
+      "email": "rahim.khan92@gmail.com",
+      "days_since_contact": 7,
+      "status": "on-track",
+      "tags": ["childhood", "cricket buddy"],
+      "bio": "Best friend since class 5 in Nageswari. Still plays cricket with him whenever I visit home.",
+      "goal": 10,
+      "next_due_date": "2025-04-20"
+    },
+    {
+      "id": 3,
+      "name": "Sofia Ahmed",
+      "picture": "https://picsum.photos/id/1027/300/300",
+      "email": "sofia.ahmed@outlook.com",
+      "days_since_contact": 11,
+      "status": "almost due",
+      "tags": ["work", "mentor"],
+      "bio": "Former colleague at Grameenphone. She taught me everything about digital marketing.",
+      "goal": 14,
+      "next_due_date": "2025-04-18"
+    },
+    {
+      "id": 4,
+      "name": "Arjun Patel",
+      "picture": "https://picsum.photos/id/201/300/300",
+      "email": "arjun.patel1995@yahoo.com",
+      "days_since_contact": 25,
+      "status": "overdue",
+      "tags": ["university", "traveler"],
+      "bio": "Roommate during Masters in Malaysia. We backpacked through Thailand and Vietnam together.",
+      "goal": 21,
+      "next_due_date": "2025-03-30"
+    },
+    {
+      "id": 5,
+      "name": "Nadia Islam",
+      "picture": "https://picsum.photos/id/1009/300/300",
+      "email": "nadia.islam.bd@gmail.com",
+      "days_since_contact": 4,
+      "status": "on-track",
+      "tags": ["cousin", "family"],
+      "bio": "My favorite cousin. She just moved to Dhaka for her new job at BRAC.",
+      "goal": 7,
+      "next_due_date": "2025-04-25"
+    },
+    {
+      "id": 6,
+      "name": "Tareq Hasan",
+      "picture": "https://picsum.photos/id/177/300/300",
+      "email": "tareq.hasan@proton.me",
+      "days_since_contact": 9,
+      "status": "almost due",
+      "tags": ["gym", "close friend"],
+      "bio": "Gym partner and motivation buddy. We push each other to stay consistent with fitness.",
+      "goal": 10,
+      "next_due_date": "2025-04-22"
+    },
+    {
+      "id": 7,
+      "name": "Meherun Nessa",
+      "picture": "https://picsum.photos/id/1025/300/300",
+      "email": "meherun.n@gmail.com",
+      "days_since_contact": 32,
+      "status": "overdue",
+      "tags": ["school", "childhood"],
+      "bio": "School friend from Nageswari Girls' High School. She is now a teacher in Rangpur.",
+      "goal": 30,
+      "next_due_date": "2025-03-20"
+    },
+    {
+      "id": 8,
+      "name": "Fahim Chowdhury",
+      "picture": "https://picsum.photos/id/238/300/300",
+      "email": "fahim.chy@live.com",
+      "days_since_contact": 12,
+      "status": "almost due",
+      "tags": ["work", "coder"],
+      "bio": "Met at a tech meetup in Dhaka. We discuss startups, coding challenges, and freelance gigs.",
+      "goal": 14,
+      "next_due_date": "2025-04-15"
+    }
+  ]
+}
