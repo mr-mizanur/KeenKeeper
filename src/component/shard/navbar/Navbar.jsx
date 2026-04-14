@@ -20,8 +20,8 @@ const Navbar = () => {
             <div className="container mx-auto flex items-center justify-between py-4">
 
                
-                <div className="text-2xl font-bold">
-                    <span className="text-black">Keen</span>
+                <div className="text-3xl ">
+                    <span className="text-black font-bold">Keen</span>
                     <span className="text-emerald-700">Keeper</span>
                 </div>
 

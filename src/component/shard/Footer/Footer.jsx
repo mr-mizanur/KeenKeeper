@@ -26,7 +26,7 @@ const Footer = () => {
           
           <div className="flex gap-6">
             <a 
-              href="https://facebook.com" 
+              href="https://www.facebook.com/mr.mizanur.info/" 
               target="_blank"
               rel="noopener noreferrer"
               className="w-12 h-12 bg-white/10 hover:bg-white/20 rounded-2xl flex items-center justify-center transition-all hover:scale-110"
@@ -35,7 +35,7 @@ const Footer = () => {
             </a>
             
             <a 
-              href="https://instagram.com" 
+              href="https://www.instagram.com/mr.mizanur_/" 
               target="_blank"
               rel="noopener noreferrer"
               className="w-12 h-12 bg-white/10 hover:bg-white/20 rounded-2xl flex items-center justify-center transition-all hover:scale-110"
@@ -44,7 +44,7 @@ const Footer = () => {
             </a>
             
             <a 
-              href="https://youtube.com" 
+              href="https://www.youtube.com/@mizdev" 
               target="_blank"
               rel="noopener noreferrer"
               className="w-12 h-12 bg-white/10 hover:bg-white/20 rounded-2xl flex items-center justify-center transition-all hover:scale-110"

@@ -97,15 +97,17 @@ const FriendDetails = () => {
         {friend.email}
     </p>
                     <div className="mt-6 space-y-3">
-                        <button className="w-full border py-2 rounded-xl flex justify-center gap-2">
-                            <LuAlarmClockCheck /> Snooze
-                        </button>
+                        <button className="w-full border border-gray-200 py-2.5 rounded-xl flex justify-center items-center gap-2  bg-white text-gray-700 font-medium transition-all duration-300 ease-in-out shadow-sm hover:shadow-md active:scale-95">
+    
+    <LuAlarmClockCheck className="text-lg" />
+    Snooze
+</button>
 
-                        <button className="w-full border py-2 rounded-xl flex justify-center gap-2">
+                        <button className="w-full border border-gray-200 py-2.5 rounded-xl flex justify-center items-center gap-2  bg-white text-gray-700 font-medium transition-all duration-300 ease-in-out shadow-sm hover:shadow-md active:scale-95">
                             <MdOutlineArchive /> Archive
                         </button>
 
-                        <button className="w-full border border-red-400 text-red-500 py-2 rounded-xl flex justify-center gap-2">
+                        <button className="w-full border border-gray-200 py-2.5 rounded-xl flex justify-center items-center gap-2  bg-white text-gray-700 font-medium transition-all duration-300 ease-in-out shadow-sm hover:shadow-md active:scale-95">
                             <MdAutoDelete /> Delete
                         </button>
                     </div>
@@ -117,17 +119,29 @@ const FriendDetails = () => {
                         <h3 className="text-xl mb-4">Quick Check-In</h3>
 
                         <div className="grid grid-cols-3 gap-4">
-                            <button onClick={() => handleAction("call")} className="bg-gray-100 p-6 rounded-xl text-center">
+                            <button onClick={() => handleAction("call")} className="bg-gray-100 p-5 rounded-2xl flex flex-col justify-center items-center gap-2
+                                                                                    text-gray-700 font-medium
+                                                                                    hover:bg-green-100 hover:text-green-600
+                                                                                    transition-all duration-300 ease-in-out
+                                                                                    shadow-sm hover:shadow-md active:scale-95">
                                 <MdAddCall />
                                 <p>Call</p>
                             </button>
 
-                            <button onClick={() => handleAction("sms")} className="bg-gray-100 p-6 rounded-xl text-center">
+                            <button onClick={() => handleAction("sms")} className="bg-gray-100 p-5 rounded-2xl flex flex-col justify-center items-center gap-2
+                                                                                  text-gray-700 font-medium
+                                                                                  hover:bg-green-100 hover:text-green-600
+                                                                                  transition-all duration-300 ease-in-out
+                                                                                  shadow-sm hover:shadow-md active:scale-95">
                                 <MdOutlineSms />
                                 <p>Text</p>
                             </button>
 
-                            <button onClick={() => handleAction("video")} className="bg-gray-100 p-6 rounded-xl text-center">
+                            <button onClick={() => handleAction("video")} className="bg-gray-100 p-5 rounded-2xl flex flex-col justify-center items-center gap-2
+                                                                                    text-gray-700 font-medium
+                                                                                    hover:bg-green-100 hover:text-green-600
+                                                                                    transition-all duration-300 ease-in-out
+                                                                                    shadow-sm hover:shadow-md active:scale-95">
                                 <FaCamera />
                                 <p>Video</p>
                             </button>

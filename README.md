@@ -6,7 +6,7 @@ KeenKeeper is a modern friendship tracking web app built with React. It helps us
 ---
 
 ## 🚀 Live Demo
-https://your-live-link-here.com
+https://keen-keeper-pro.vercel.app/
 
 ---
 
@@ -75,7 +75,7 @@ https://your-live-link-here.com
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/keenkeeper.git
+git clone https://github.com/mr-mizanur/keenkeeper.git
 
 # Go to project folder
 cd keenkeeper
