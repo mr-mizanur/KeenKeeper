@@ -3,7 +3,7 @@ import { FaUserFriends, FaUserPlus } from 'react-icons/fa';
 import { FiTarget } from 'react-icons/fi';
 import { FiAlertTriangle } from 'react-icons/fi';
 import { FaHeart } from 'react-icons/fa';
-
+import { toast } from 'react-toastify';
 const HomeHeader = () => {
   return (
     <div className="bg-gray-50 pt-8 pb-10">
@@ -21,9 +21,8 @@ const HomeHeader = () => {
         
         <div className="flex justify-center mb-12">
           <button 
-            onClick={() => alert(' friend added')}
-            className="bg-emerald-700 hover:bg-emerald-800 text-white font-semibold px-8 py-4 rounded-2xl flex items-center gap-3 text-lg shadow-lg shadow-emerald-200 transition-all active:scale-95"
-          >
+            onClick={() => toast.success("Friend added 🎉")}
+            className="bg-emerald-700 hover:bg-emerald-800 text-white font-semibold px-8 py-4 rounded-2xl flex items-center gap-3 text-lg shadow-lg shadow-emerald-200 transition-all active:scale-95">
             <span className="text-xl"> <FaUserPlus></FaUserPlus> </span>
             Add a Friend
           </button>
@@ -35,7 +34,7 @@ const HomeHeader = () => {
               <FaUserFriends className="w-8 h-8 text-blue-600" />
             </div>
             <div>
-              <div className="text-4xl font-bold text-gray-900">10</div>
+              <div className="text-4xl font-bold text-gray-900">12</div>
               <div className="text-gray-500 text-sm">Total Friends</div>
             </div>
           </div>

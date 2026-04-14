@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { FaCamera } from 'react-icons/fa';
-import { MdAddCall, MdOutlineSms, MdDelete } from 'react-icons/md';
-
+import { MdAddCall, MdOutlineSms, MdDelete, MdFilterNone } from 'react-icons/md';
+import { toast } from 'react-toastify';
 const Timeline = () => {
 
     const [timeline, setTimeline] = useState([]);
@@ -33,8 +33,22 @@ const Timeline = () => {
     };
 
     if (timeline.length === 0) {
-        return <p className="p-6">No timeline data</p>;
-    }
+    return (
+        <div className="flex flex-col items-center justify-center min-h-[300px] text-center bg-gray-50 border border-gray-200 rounded-2xl p-8">
+
+            <div className="text-5xl mb-3"> <MdFilterNone></MdFilterNone> </div>
+
+            <h2 className="text-xl font-bold text-gray-800">
+                No Timeline Data
+            </h2>
+
+            <p className="text-gray-500 mt-2 text-sm">
+                Start adding calls, SMS, or video check-ins to see your activity here.
+            </p>
+
+        </div>
+    );
+}
 
     return (
         <div className="p-6 max-w-2xl mx-auto">
@@ -45,8 +59,8 @@ const Timeline = () => {
                     Timeline
                 </h2>
 
-                <button onClick={handleClearAll} className="px-4 py-2 bg-red-500 text-white rounded-lg text-sm">
-                    Clear All
+                <button onClick={() => { toast.success("Delete All"); handleClearAll();}}className="px-4 py-2 bg-red-500 text-white rounded-lg text-sm">
+                     Clear All
                 </button>
             </div>
 
@@ -78,7 +92,7 @@ const Timeline = () => {
 
                         
                         <div className="mt-4 flex justify-end">
-                            <button onClick={() => handleDelete(item.id)} className="flex items-center gap-1 text-sm text-red-500 hover:text-red-700">
+                            <button onClick={() => {toast.success("Delete done"); handleDelete(item.id); }} className="flex items-center gap-1 text-sm text-red-500 hover:text-red-700">
                                 <MdDelete /> Delete
                             </button>
                         </div>

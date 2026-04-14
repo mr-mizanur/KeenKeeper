@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaFacebook, FaYoutube, FaInstagram } from 'react-icons/fa6';
+import { Link } from 'react-router';
 
 const Footer = () => {
   return (
@@ -57,9 +58,9 @@ const Footer = () => {
         <div className="border-t border-white/20 mt-12 pt-8 text-center text-sm text-[#d1f0e8] flex justify-between">
           <div><p>© 2026 KeenKeeper. All rights reserved.</p></div>
           <div className=' gap-4  flex'> 
-            <a href="">Privacy Policy </a>
-            <a href="">  Terms of Service   </a>
-            <a href="">Cookies </a>
+            <Link to={"/privacy"}>Privacy Policy </Link>
+            <Link to={"/terms"}>  Terms of Service   </Link>
+            <Link to={"/cookies"}>Cookies </Link>
           </div>
           
         </div>

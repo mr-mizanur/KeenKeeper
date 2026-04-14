@@ -3,6 +3,7 @@ import { FaCamera } from 'react-icons/fa';
 import { LuAlarmClockCheck } from 'react-icons/lu';
 import { MdAddCall, MdAutoDelete, MdOutlineArchive, MdOutlineSms } from 'react-icons/md';
 import { useParams } from 'react-router-dom';
+import { toast } from 'react-toastify';
 
 const FriendDetails = () => {
     const { id } = useParams();
@@ -11,26 +12,37 @@ const FriendDetails = () => {
     const [loading, setLoading] = useState(true);
     const [friend, setFriend] = useState(null);
 
-   
     const [timeline, setTimeline] = useState(() => {
         const saved = localStorage.getItem("timeline");
         return saved ? JSON.parse(saved) : [];
     });
 
-  const handleAction = (type) => {
-    const newEvent = {
-        id: Date.now(),
-        type,
-        date: new Date(),
-        name: friend.name   
+   
+    const handleAction = (type) => {
+
+        const newEvent = {
+            id: Date.now(),
+            type,
+            date: new Date(),
+            name: friend?.name
+        };
+
+       
+        const isDuplicate = timeline.some(
+            item => item.type === type && item.name === friend?.name
+        );
+
+        if (isDuplicate) {
+            toast.error("Already added in timeline ");
+            return;
+        }
+
+        toast.success("Added to timeline ");
+
+        const updated = [...timeline, newEvent];
+        setTimeline(updated);
+        localStorage.setItem("timeline", JSON.stringify(updated));
     };
-
-    alert(`${type} added to timeline ✅`);
-
-    const updated = [...timeline, newEvent];
-    setTimeline(updated);
-    localStorage.setItem("timeline", JSON.stringify(updated));
-};
 
     useEffect(() => {
         fetch("/friends.json")
@@ -53,25 +65,37 @@ const FriendDetails = () => {
             });
     }, [id]);
 
-    if (loading) return <div>Loading friend details...</div>;
-    if (!friend) return <div>Friend not found!</div>;
+    if (loading) return <div>Loading...</div>;
+
+    if (!friend) return (
+        <div className="p-6 text-red-500 text-center">
+            Friend not found!
+        </div>
+    );
 
     return (
         <div className="max-w-6xl mx-auto p-6">
             <div className="flex flex-col lg:flex-row gap-8">
 
-                
+             
                 <div className="lg:w-96 bg-white rounded-3xl shadow-xl p-8 text-center">
                     <img
                         src={friend.picture}
                         alt={friend.name}
-                        className="w-32 h-32 mx-auto rounded-full"/>
+                        className="w-32 h-32 mx-auto rounded-full"
+                    />
 
-                    <h1 className="text-2xl mt-4">{friend.name}</h1>
+                     <h1 className="text-2xl font-bold text-gray-800">
+        {friend.name}
+    </h1>
 
-                    <p className="text-blue-500 mt-2">{friend.email}</p>
+    <p className="text-sm text-gray-500 italic px-4">
+        {friend.bio}
+    </p>
 
-                  
+    <p className="text-blue-600 font-medium">
+        {friend.email}
+    </p>
                     <div className="mt-6 space-y-3">
                         <button className="w-full border py-2 rounded-xl flex justify-center gap-2">
                             <LuAlarmClockCheck /> Snooze
@@ -86,8 +110,9 @@ const FriendDetails = () => {
                         </button>
                     </div>
                 </div>
-                <div className="flex-1">
 
+                
+                <div className="flex-1">
                     <div className="bg-white rounded-3xl shadow p-8">
                         <h3 className="text-xl mb-4">Quick Check-In</h3>
 
@@ -108,8 +133,8 @@ const FriendDetails = () => {
                             </button>
                         </div>
                     </div>
-
                 </div>
+
             </div>
         </div>
     );

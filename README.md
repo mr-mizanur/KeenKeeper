@@ -1,16 +1,87 @@
-# React + Vite
+# 🔗 KeenKeeper (Friendship Management App)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📌 Project Overview
+KeenKeeper is a modern friendship tracking web app built with React. It helps users manage, track, and improve their relationships by logging interactions like calls, texts, and video chats. The app also provides analytics and a timeline of all interactions in a clean, responsive UI.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Live Demo
+https://your-live-link-here.com
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Technologies Used
+- React.js
+- React Router DOM
+- Tailwind CSS
+- Recharts
+- React Icons
+- Toast Notifications (React Hot Toast / similar)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## ✨ Key Features
+
+### 1. 👥 Friend Management
+- Display friends from a JSON dataset
+- Beautiful responsive cards with status indicators
+- Click to view detailed friend profile
+
+### 2. ⚡ Interaction Tracking
+- Log Call, Text, and Video interactions
+- Automatically update timeline with new entries
+- Toast notifications on every interaction
+
+### 3. 📊 Analytics & Timeline
+- Timeline page showing full interaction history
+- Filter timeline by Call, Text, or Video
+- Analytics page with pie chart visualization of interactions
+
+---
+
+## 📱 Pages Overview
+
+- **Home Page**
+  - Navbar with active link highlighting
+  - Banner section with summary cards
+  - Friends grid layout
+
+- **Friend Details Page**
+  - Profile info and relationship details
+  - Quick action buttons (Call, Text, Video)
+  - Stats and goal tracking cards
+
+- **Timeline Page**
+  - Interaction history list
+  - Filter options for interaction types
+
+- **Stats Page**
+  - Friendship analytics chart (Recharts)
+
+- **404 Page**
+  - Friendly error page for invalid routes
+
+---
+
+## 🎯 Additional Features
+- Loading spinner while fetching data
+- Fully responsive design (mobile, tablet, desktop)
+- Persistent routing (no reload errors on refresh)
+- Clean UI based on Figma design
+
+---
+
+## ⚙️ Setup Instructions
+
+```bash
+# Clone the repository
+git clone https://github.com/your-username/keenkeeper.git
+
+# Go to project folder
+cd keenkeeper
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev

@@ -1,16 +1,14 @@
-
-import './App.css'
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
-  
-
   return (
     <>
-    
-
-      <h2>hi</h2>
+      {/* তোমার routes / components */}
+      
+      <ToastContainer />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
