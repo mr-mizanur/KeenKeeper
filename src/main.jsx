@@ -8,6 +8,7 @@ import Timeline from "./pages/timeline/Timeline";
 import Status from "./pages/status/Status";
 import { HiH2 } from "react-icons/hi2";
 import Error from "./component/error/Error";
+import FriendDetails from "./pages/friendDetails/FriendDetails";
 
 const router = createBrowserRouter([
   {
@@ -25,6 +26,11 @@ const router = createBrowserRouter([
       {
         path: "status",
         element: <Status></Status>
+      },
+      {
+       path:"/friendDetails/:id",
+       Component: FriendDetails
+
       },
     ],
     errorElement: <Error></Error>
