@@ -21,7 +21,7 @@ const HomeHeader = () => {
         
         <div className="flex justify-center mb-12">
           <button 
-            onClick={() => toast.success("Friend added 🎉")}
+            onClick={() => toast.success("Friend added ")}
             className="bg-emerald-700 hover:bg-emerald-800 text-white font-semibold px-8 py-4 rounded-2xl flex items-center gap-3 text-lg shadow-lg shadow-emerald-200 transition-all active:scale-95">
             <span className="text-xl"> <FaUserPlus></FaUserPlus> </span>
             Add a Friend

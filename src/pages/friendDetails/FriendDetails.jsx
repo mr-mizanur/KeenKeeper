@@ -97,17 +97,17 @@ const FriendDetails = () => {
         {friend.email}
     </p>
                     <div className="mt-6 space-y-3">
-                        <button className="w-full border border-gray-200 py-2.5 rounded-xl flex justify-center items-center gap-2  bg-white text-gray-700 font-medium transition-all duration-300 ease-in-out shadow-sm hover:shadow-md active:scale-95">
+                        <button onClick={() => toast.error("Unable to snooze")} className="w-full border border-gray-200 py-2.5 rounded-xl flex justify-center items-center gap-2  bg-white text-gray-700 font-medium transition-all duration-300 ease-in-out shadow-sm hover:shadow-md active:scale-95">
     
-    <LuAlarmClockCheck className="text-lg" />
-    Snooze
-</button>
+                             <LuAlarmClockCheck className="text-lg" />
+                             Snooze
+                        </button>
 
-                        <button className="w-full border border-gray-200 py-2.5 rounded-xl flex justify-center items-center gap-2  bg-white text-gray-700 font-medium transition-all duration-300 ease-in-out shadow-sm hover:shadow-md active:scale-95">
+                        <button onClick={() => toast.error("Unable to archive")} className="w-full border border-gray-200 py-2.5 rounded-xl flex justify-center items-center gap-2  bg-white text-gray-700 font-medium transition-all duration-300 ease-in-out shadow-sm hover:shadow-md active:scale-95">
                             <MdOutlineArchive /> Archive
                         </button>
 
-                        <button className="w-full border border-gray-200 py-2.5 rounded-xl flex justify-center items-center gap-2  bg-white text-gray-700 font-medium transition-all duration-300 ease-in-out shadow-sm hover:shadow-md active:scale-95">
+                        <button onClick={() => toast.error("Unable to delete")} className="w-full border border-gray-200 py-2.5 rounded-xl flex justify-center items-center gap-2  bg-white text-gray-700 font-medium transition-all duration-300 ease-in-out shadow-sm hover:shadow-md active:scale-95">
                             <MdAutoDelete /> Delete
                         </button>
                     </div>
