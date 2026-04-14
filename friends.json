@@ -95,6 +95,54 @@
       "bio": "Met at a tech meetup in Dhaka. We discuss startups, coding challenges, and freelance gigs.",
       "goal": 14,
       "next_due_date": "2025-04-15"
+    },
+    {
+      "id": 9,
+      "name": "Imran Hossain",
+      "picture": "https://picsum.photos/id/269/300/300",
+      "email": "imran.hossain@outlook.com",
+      "days_since_contact": 21,
+      "status": "overdue",
+      "tags": ["online friend", "gaming"],
+      "bio": "Roommate during studies in Malaysia. Explored Southeast Asia together.",
+      "goal": 7,
+      "next_due_date": "2025-04-30"
+    },
+    {
+      "id": 10,
+      "name": "Lubna Parveen",
+      "picture": "https://picsum.photos/id/59/300/300",
+      "email": "lubna.parveen@live.com",
+      "days_since_contact": 24,
+      "status": "overdue",
+      "tags": ["relative", "family"],
+      "bio": "Met at a tech meetup in Dhaka. We discuss startups and coding.",
+      "goal": 7,
+      "next_due_date": "2025-05-11"
+    },
+    {
+      "id": 11,
+      "name": "Sadia Rahman",
+      "picture": "https://picsum.photos/id/795/300/300",
+      "email": "sadia.rahman@bdmail.com",
+      "days_since_contact": 3,
+      "status": "on-track",
+      "tags": ["relative", "family"],
+      "bio": "School friend from Nageswari High School. Now working as doctor in Chittagong.",
+      "goal": 7,
+      "next_due_date": "2025-04-26"
+    },
+    {
+      "id": 12,
+      "name": "Sabbir Rahman",
+      "picture": "https://picsum.photos/id/837/300/300",
+      "email": "sabbir.rahman@yahoo.com",
+      "days_since_contact": 18,
+      "status": "almost due",
+      "tags": ["university", "traveler"],
+      "bio": "Former colleague at BRAC. Taught me a lot about leadership.",
+      "goal": 30,
+      "next_due_date": "2025-05-04"
     }
   ]
 }

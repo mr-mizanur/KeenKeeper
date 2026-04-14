@@ -19,7 +19,11 @@ const HomeCard = () => {
     }, []);
 
     if (loading) {
-        return <div className="text-center py-12 text-gray-500">Loading friends...</div>;
+        return <div className="text-center py-12 text-gray-500">
+<span class="loading loading-bars loading-lg"></span>
+
+
+        </div>;
     }
 
     return (
